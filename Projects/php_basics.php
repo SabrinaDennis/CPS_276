@@ -1,7 +1,8 @@
 <?php
+phpinfo();  
+
 $numbers = range(1, 50);
 $evenNumbersArray = [];
-
 
 foreach ($numbers as $num) {
     if ($num % 2 === 0) {
@@ -9,9 +10,7 @@ foreach ($numbers as $num) {
     }
 }
 
-
 $evenNumbers = implode(" - ", $evenNumbersArray);
-
 
 $form = <<<HTML
 <form class="mt-4">
@@ -26,7 +25,6 @@ $form = <<<HTML
     </div>
 </form>
 HTML;
-
 
 function createTable($rows, $columns) {
     $table = '<table class="table table-bordered mt-4">';
@@ -58,3 +56,4 @@ function createTable($rows, $columns) {
     ?>
 </body>
 </html>
+
